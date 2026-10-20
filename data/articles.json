@@ -1,0 +1,126 @@
+{
+  "categories": [
+    {
+      "id": "soliq",
+      "name": "Soliq",
+      "desc": "QQS, foyda solig'i, JShDS va soliq hisobotlari",
+      "color": "#b45309"
+    },
+    {
+      "id": "bojxona",
+      "name": "Bojxona",
+      "desc": "Import, eksport, bojxona to'lovlari va deklaratsiya",
+      "color": "#1d4ed8"
+    },
+    {
+      "id": "buxgalteriya",
+      "name": "Buxgalteriya",
+      "desc": "Provodkalar, schyotlar va moliyaviy hisobot",
+      "color": "#0f766e"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "qqs-nima",
+      "title": "QQS nima degani?",
+      "lead": "Qo'shilgan qiymat solig'i kim to'laydi, qanday hisoblanadi va nega u «egri soliq» deyiladi?",
+      "category": "soliq",
+      "date": "2026-10-19",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "qqs",
+        "qo'shilgan qiymat solig'i",
+        "12%",
+        "hisob-faktura",
+        "soliq"
+      ],
+      "body": "<p><strong>QQS (qo'shilgan qiymat solig'i)</strong> — tovar sotilganda, ish bajarilganda yoki xizmat ko'rsatilganda narxga qo'shiladigan soliq. U zanjirning har bir bosqichida faqat shu bosqichda <em>qo'shilgan qiymatdan</em> undiriladi, shuning uchun nomi ham shunday.</p>\n\n<h2>Kim to'laydi?</h2>\n<p>Rasmiy jihatdan QQSni byudjetga korxona (QQS to'lovchisi) to'laydi. Lekin soliq narx ichida bo'lgani uchun uning og'irligi oxirgi xaridor — iste'molchi zimmasiga tushadi. Shu sababli QQS <strong>egri soliq</strong> hisoblanadi: to'lovchi bitta, haqiqiy yuk ko'taruvchi boshqa.</p>\n\n<h2>Stavka qancha?</h2>\n<p>O'zbekistonda QQSning umumiy stavkasi — <strong>12%</strong>. Eksport kabi ayrim operatsiyalarga 0% stavka qo'llanadi, ba'zi tovar va xizmatlar esa QQSdan ozod qilingan.</p>\n<div class=\"note\">2026-yil 1-iyundan ayrim korxonalar uchun soddalashtirilgan tartib joriy etildi: QQS sotish aylanmasining 6% miqdorida hisoblanadi. Bu tartibda kirim QQSni hisobga olish imkoniyati boshqacha bo'ladi, shuning uchun o'tishdan oldin hisob-kitob qilib ko'ring.</div>\n\n<h2>Qanday hisoblanadi?</h2>\n<p>Korxona byudjetga sotuvdan hisoblangan QQS bilan xariddan to'langan (hisobga olinadigan) QQS o'rtasidagi farqni to'laydi:</p>\n<div class=\"formula\">To'lanadigan QQS = Sotuvdagi QQS − Hisobga olinadigan (kirim) QQS</div>\n<h3>Misol</h3>\n<p>Korxona tovarni 10 000 000 so'm + 12% QQS (1 200 000 so'm) ga sotib oldi. Keyin uni 15 000 000 so'm + 12% QQS (1 800 000 so'm) ga sotdi.</p>\n<table>\n  <thead><tr><th>Ko'rsatkich</th><th>Summa, so'm</th></tr></thead>\n  <tbody>\n    <tr><td>Sotuvdagi QQS</td><td>1 800 000</td></tr>\n    <tr><td>Kirim QQS</td><td>1 200 000</td></tr>\n    <tr><td><strong>Byudjetga to'lanadi</strong></td><td><strong>600 000</strong></td></tr>\n  </tbody>\n</table>\n<p>600 000 so'm — bu aynan korxona qo'shgan 5 000 000 so'mlik qiymatning 12 foizi.</p>\n\n<h2>Narx ichidan QQSni ajratish</h2>\n<p>Agar summa QQS bilan berilgan bo'lsa, soliqni quyidagicha ajratasiz:</p>\n<div class=\"formula\">QQS = Summa × 12 ÷ 112</div>\n<p>Masalan, 11 200 000 so'mning ichidagi QQS: 11 200 000 × 12 ÷ 112 = 1 200 000 so'm.</p>\n\n<h2>Kirim QQSni hisobga olish shartlari</h2>\n<ul>\n  <li>Xarid elektron hisob-faktura bilan rasmiylashtirilgan bo'lishi;</li>\n  <li>Sotuvchi QQS to'lovchisi sifatida ro'yxatdan o'tgan bo'lishi;</li>\n  <li>Tovar yoki xizmat QQS solinadigan faoliyat uchun olingan bo'lishi;</li>\n  <li>Importda — bojxonada to'langan QQS tasdiqlangan bo'lishi.</li>\n</ul>\n<div class=\"note\">Hisob-faktura bo'lmasa, to'langan QQS kirim sifatida hisobga olinmaydi va xarajat tannarxiga qo'shiladi. Bu eng ko'p uchraydigan xatolardan biri.</div>",
+      "status": "published"
+    },
+    {
+      "slug": "bojxona-boji-nima",
+      "title": "Bojxona boji nima?",
+      "lead": "Chetdan tovar olib kirganda to'lanadigan boj qanday hisoblanadi va u QQS hamda aksizdan nimasi bilan farq qiladi?",
+      "category": "bojxona",
+      "date": "2026-10-19",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "bojxona boji",
+        "import",
+        "bojxona to'lovlari",
+        "tarif",
+        "advalor"
+      ],
+      "body": "<p><strong>Bojxona boji</strong> — tovar bojxona chegarasidan olib o'tilganda davlat foydasiga undiriladigan majburiy to'lov. Asosan import (olib kirish) da qo'llanadi va ichki ishlab chiqaruvchini himoya qilish hamda byudjetga daromad olish vazifasini bajaradi.</p>\n\n<h2>Boj qaysi summadan hisoblanadi?</h2>\n<p>Boj <strong>bojxona qiymati</strong> dan hisoblanadi. Bojxona qiymati — bu tovarning shartnoma narxi va unga qo'shiladigan xarajatlar (chegaragacha bo'lgan transport, sug'urta va boshqalar). Shuning uchun invoysdagi narx bilan boj hisoblanadigan summa ko'pincha farq qiladi.</p>\n\n<h2>Stavka turlari</h2>\n<table>\n  <thead><tr><th>Turi</th><th>Qanday hisoblanadi</th><th>Misol</th></tr></thead>\n  <tbody>\n    <tr><td>Advalor</td><td>Bojxona qiymatining foizi</td><td>Qiymatning 10%</td></tr>\n    <tr><td>Spetsifik</td><td>Tovar birligiga qat'iy summa</td><td>1 kg uchun 0,5 AQSh dollari</td></tr>\n    <tr><td>Kombinatsiyalashgan</td><td>Ikkalasidan kattasi olinadi</td><td>10%, lekin 1 kg uchun kamida 0,5 $</td></tr>\n  </tbody>\n</table>\n<p>Har bir tovar uchun stavka uning <strong>TIF TN kodi</strong> bo'yicha belgilanadi. Kod noto'g'ri tanlansa, boj ham noto'g'ri chiqadi.</p>\n\n<h2>Importda faqat boj to'lanmaydi</h2>\n<p>Tovar olib kirilganda odatda bir nechta to'lov birga hisoblanadi:</p>\n<ul>\n  <li><strong>Bojxona boji</strong> — bojxona qiymatidan;</li>\n  <li><strong>Aksiz solig'i</strong> — faqat aksiz osti tovarlarga;</li>\n  <li><strong>QQS</strong> — bojxona qiymati + boj + aksiz summasidan;</li>\n  <li><strong>Bojxona yig'imi</strong> — rasmiylashtirish uchun.</li>\n</ul>\n<div class=\"formula\">Import QQS bazasi = Bojxona qiymati + Boj + Aksiz</div>\n\n<h2>Misol</h2>\n<p>Bojxona qiymati 100 000 000 so'm, boj stavkasi 10%, tovar aksiz osti emas.</p>\n<table>\n  <thead><tr><th>To'lov</th><th>Hisob</th><th>Summa, so'm</th></tr></thead>\n  <tbody>\n    <tr><td>Boj</td><td>100 000 000 × 10%</td><td>10 000 000</td></tr>\n    <tr><td>QQS</td><td>(100 000 000 + 10 000 000) × 12%</td><td>13 200 000</td></tr>\n    <tr><td colspan=\"2\"><strong>Jami (yig'imsiz)</strong></td><td><strong>23 200 000</strong></td></tr>\n  </tbody>\n</table>\n<div class=\"note\">Kelib chiqish mamlakatiga qarab boj stavkasi kamayishi yoki umuman qo'llanmasligi mumkin (masalan, erkin savdo kelishuvlari bo'yicha). Buning uchun kelib chiqish sertifikati talab qilinadi.</div>\n\n<h2>Buxgalteriyada qanday aks etadi?</h2>\n<p>To'langan bojxona boji tovar tannarxiga qo'shiladi. Import QQS esa hisob-fakturadagi kabi kirim QQS sifatida hisobga olinadi (shartlar bajarilganda).</p>",
+      "status": "published"
+    },
+    {
+      "slug": "bojxona-qiymati-qanday-aniqlanadi",
+      "title": "Bojxona qiymati qanday aniqlanadi?",
+      "lead": "Bojxona qiymatini aniqlashning oltita usuli va qachon qaysi biri qo'llanadi.",
+      "category": "bojxona",
+      "date": "2026-10-18",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "bojxona qiymati",
+        "usullar",
+        "invoys",
+        "BYD",
+        "import"
+      ],
+      "body": "<p>Bojxona qiymati — boj, aksiz va import QQS hisoblanadigan asos. U qanchalik to'g'ri aniqlansa, keyingi tekshiruvlarda shuncha kam muammo bo'ladi.</p>\n\n<h2>Oltita usul</h2>\n<p>Usullar qat'iy ketma-ketlikda qo'llanadi: oldingi usulni qo'llab bo'lmasagina keyingisiga o'tiladi.</p>\n<ol>\n  <li><strong>Olib kirilayotgan tovar bilan bitim qiymati</strong> — asosiy usul, shartnoma va invoysdagi narx asosida.</li>\n  <li><strong>Aynan o'xshash tovarlar bilan bitim qiymati</strong> — xuddi shunday tovarning avvalgi importi asosida.</li>\n  <li><strong>O'xshash tovarlar bilan bitim qiymati</strong> — tavsifi va vazifasi yaqin tovarlar asosida.</li>\n  <li><strong>Qiymatni chegirish usuli</strong> — ichki bozordagi sotuv narxidan xarajat va foydani ayirib.</li>\n  <li><strong>Qiymatni qo'shish usuli</strong> — ishlab chiqarish xarajatlari va foydani qo'shib.</li>\n  <li><strong>Zaxira usul</strong> — yuqoridagilarning hech biri mos kelmaganda.</li>\n</ol>\n\n<h2>Birinchi usulda nima qo'shiladi?</h2>\n<p>Invoys narxiga, agar u ichiga kirmagan bo'lsa, quyidagilar qo'shiladi:</p>\n<ul>\n  <li>chegaragacha bo'lgan transport xarajatlari;</li>\n  <li>yuklash, tushirish va sug'urta xarajatlari;</li>\n  <li>xaridor to'lagan komissiya va brokerlik haqlari (xarid komissiyasidan tashqari);</li>\n  <li>litsenziya to'lovlari, agar ular tovar bilan bog'liq bo'lsa.</li>\n</ul>\n<div class=\"note\">Yetkazib berish sharti (Incoterms) muhim: FCA yoki EXW da transport xarajati qo'shiladi, CPT/CIP da esa u allaqachon narxda bo'lishi mumkin.</div>\n\n<h2>Qachon birinchi usul rad etiladi?</h2>\n<ul>\n  <li>hujjatlar to'liq yoki ishonchli bo'lmaganda;</li>\n  <li>sotuvchi va xaridor o'zaro bog'liq bo'lib, bu narxga ta'sir qilganda;</li>\n  <li>narx tovarlardan foydalanishga cheklov yoki shartlar bilan bog'langanda.</li>\n</ul>",
+      "status": "published"
+    },
+    {
+      "slug": "tif-tn-kodi-nima",
+      "title": "TIF TN kodi nima va qanday aniqlanadi?",
+      "lead": "10 xonali tovar kodi nimani bildiradi va nega uni to'g'ri tanlash bojxona to'lovlariga to'g'ridan-to'g'ri ta'sir qiladi?",
+      "category": "bojxona",
+      "date": "2026-10-17",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "tif tn",
+        "kod",
+        "tasniflash",
+        "garmonizatsiyalangan tizim",
+        "hs code"
+      ],
+      "body": "<p><strong>TIF TN</strong> — Tashqi iqtisodiy faoliyat tovar nomenklaturasi. Har bir tovarga 10 xonali kod beriladi va boj stavkasi, aksiz, litsenziya va sertifikat talablari aynan shu kodga bog'langan.</p>\n\n<h2>Kod tuzilishi</h2>\n<table>\n  <thead><tr><th>Xonalar</th><th>Ma'nosi</th></tr></thead>\n  <tbody>\n    <tr><td>1–2</td><td>Guruh</td></tr>\n    <tr><td>1–4</td><td>Tovar pozitsiyasi</td></tr>\n    <tr><td>1–6</td><td>Subpozitsiya (xalqaro Garmonizatsiyalangan tizim bilan bir xil)</td></tr>\n    <tr><td>7–10</td><td>Milliy darajadagi aniqlashtirish</td></tr>\n  </tbody>\n</table>\n<p>Birinchi 6 xona dunyo bo'yicha deyarli bir xil, shuning uchun yetkazib beruvchining invoysidagi HS kod yaxshi boshlang'ich nuqta bo'ladi — lekin oxirgi 4 xonani o'zingiz aniqlashingiz kerak.</p>\n\n<h2>Qanday aniqlanadi?</h2>\n<ol>\n  <li>Tovarning nimadan yasalgani, vazifasi va qanday ishlashini aniqlang.</li>\n  <li>Bo'lim va guruh izohlarini o'qing — ular ko'pincha qaysi tovar kirmasligini aytadi.</li>\n  <li>Tasniflashning asosiy qoidalarini ketma-ket qo'llang.</li>\n  <li>Bahsli holatda bojxona organidan dastlabki qaror so'rang.</li>\n</ol>\n<div class=\"note\">Kod noto'g'ri tanlansa, kam to'langan to'lovlar keyinchalik penya va jarima bilan undirilishi mumkin. Shubhali tovarlarda dastlabki qaror olish arzonroqqa tushadi.</div>",
+      "status": "published"
+    },
+    {
+      "slug": "provodka-nima",
+      "title": "Provodka nima?",
+      "lead": "Ikki yoqlama yozuv tamoyili oddiy misollarda: nega har doim Debet = Kredit?",
+      "category": "buxgalteriya",
+      "date": "2026-10-16",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "provodka",
+        "debet",
+        "kredit",
+        "schyot",
+        "ikki yoqlama yozuv"
+      ],
+      "body": "<p><strong>Provodka</strong> — xo'jalik operatsiyasini ikkita schyotda bir vaqtda aks ettirish: bitta schyotning debetida va boshqasining kreditida, bir xil summada. Bu <strong>ikki yoqlama yozuv</strong> deyiladi.</p>\n\n<h2>Nega ikki yoqlama?</h2>\n<p>Har bir operatsiya kamida ikki narsani o'zgartiradi. Tovar sotib olsangiz — omborda tovar ko'payadi, yetkazib beruvchiga qarz ham ko'payadi. Shuning uchun yozuv ham ikki joyda bo'ladi va jami debet aylanma doim jami kredit aylanmaga teng chiqadi.</p>\n<div class=\"formula\">Σ Debet = Σ Kredit</div>\n\n<h2>Oddiy misollar</h2>\n<table>\n  <thead><tr><th>Operatsiya</th><th>Dt</th><th>Kt</th></tr></thead>\n  <tbody>\n    <tr><td>Yetkazib beruvchidan tovar keldi</td><td>2910</td><td>6010</td></tr>\n    <tr><td>Kirim QQS aks ettirildi</td><td>4410</td><td>6010</td></tr>\n    <tr><td>Yetkazib beruvchiga pul o'tkazildi</td><td>6010</td><td>5110</td></tr>\n    <tr><td>Xaridorga tovar sotildi (daromad)</td><td>4010</td><td>9020</td></tr>\n    <tr><td>Xaridordan pul tushdi</td><td>5110</td><td>4010</td></tr>\n  </tbody>\n</table>\n<p>Schyotlar: 2910 — omborxonadagi tovarlar, 4010 — xaridorlardan olinadigan schyotlar, 4410 — QQS bo'yicha bo'nak to'lovlar, 5110 — hisob-kitob schyoti, 6010 — mol yetkazib beruvchilarga to'lanadigan schyotlar, 9020 — tovarlarni sotishdan daromadlar.</p>\n\n<h2>Debet va kredit qayerda ko'payadi?</h2>\n<ul>\n  <li><strong>Aktiv schyotlar</strong> (pul, tovar, debitorlar): debetda ko'payadi, kreditda kamayadi.</li>\n  <li><strong>Passiv schyotlar</strong> (qarzlar, kapital): kreditda ko'payadi, debetda kamayadi.</li>\n</ul>\n<div class=\"note\">Provodka berishda o'zingizga savol bering: «qaysi schyotda nima ko'paydi yoki kamaydi?» Javob debet va kreditni o'zi ko'rsatadi.</div>",
+      "status": "published"
+    },
+    {
+      "slug": "akt-sverka-nima",
+      "title": "Akt-sverka nima va qachon kerak?",
+      "lead": "O'zaro hisob-kitoblarni solishtirish dalolatnomasi: tuzish tartibi va ko'p uchraydigan farqlar.",
+      "category": "buxgalteriya",
+      "date": "2026-10-15",
+      "author": "Zaxiriddin Raximov",
+      "tags": [
+        "akt sverka",
+        "solishtirish",
+        "debitor",
+        "kreditor",
+        "qarz"
+      ],
+      "body": "<p><strong>Akt-sverka</strong> (o'zaro hisob-kitoblarni solishtirish dalolatnomasi) — ikki korxona ma'lum davr uchun bir-biriga qancha qarzdor ekanini tasdiqlaydigan hujjat.</p>\n\n<h2>Qachon tuziladi?</h2>\n<ul>\n  <li>chorak yoki yil yakunida, inventarizatsiyadan oldin;</li>\n  <li>shartnoma yopilayotganda;</li>\n  <li>qarz bo'yicha nizo bo'lganda yoki sudga murojaatdan oldin;</li>\n  <li>da'vo muddatini uzish kerak bo'lganda (qarzni tan olish).</li>\n</ul>\n\n<h2>Tarkibi</h2>\n<ol>\n  <li>Davr boshidagi qoldiq;</li>\n  <li>Davr ichidagi operatsiyalar: jo'natmalar, to'lovlar, qaytarishlar;</li>\n  <li>Davr oxiridagi qoldiq — kim kimga qancha qarzdor;</li>\n  <li>Ikkala tomonning imzosi va muhri.</li>\n</ol>\n\n<h2>Farq chiqsa, nimani tekshirish kerak?</h2>\n<ul>\n  <li>bir tomonda hisob-faktura qabul qilinmagan yoki kechikib kiritilgan;</li>\n  <li>to'lov yo'lda: bir tomon yuborgan, ikkinchisiga hali tushmagan;</li>\n  <li>valyutali shartnomalarda kurs farqi;</li>\n  <li>qaytarilgan tovar yoki chegirma faqat bir tomonda aks etgan.</li>\n</ul>\n<div class=\"note\">Akt-sverkani imzolashdan oldin har bir farqning sababini yozib qo'ying — keyingi davrda shu yozuv ko'p vaqtni tejaydi.</div>",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maqolalar — ZeroTax</title>
+<meta name="description" content="Buxgalteriya, soliq va bojxona bo'yicha sodda tilda yozilgan maqolalar: QQS, bojxona boji, provodkalar va boshqalar.">
+<meta property="og:site_name" content="ZeroTax.uz">
+<meta property="og:title" content="Maqolalar — ZeroTax">
+<meta property="og:description" content="Buxgalteriya, soliq va bojxona — sodda tilda.">
+<meta property="og:locale" content="uz_UZ">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="https://www.zerotax.uz/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f4; --surface:#ffffff; --ink:#16181d; --muted:#5d6470; --line:#e4e4de;
+  --accent:#0f766e; --accent-ink:#ffffff; --accent-soft:#e3f2ef;
+  --soliq:#b45309; --bojxona:#1d4ed8; --buxgalteriya:#0f766e;
+  --note:#fff7e6; --note-line:#f0c36d; --formula:#f1f5f4;
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 24px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111315; --surface:#181b1e; --ink:#eceee9; --muted:#9aa1ab; --line:#2a2e33;
+    --accent:#2bb3a3; --accent-ink:#06201d; --accent-soft:#163430;
+    --soliq:#f0a24a; --bojxona:#7aa2ff; --buxgalteriya:#2bb3a3;
+    --note:#2a2414; --note-line:#8a6a25; --formula:#1d2326; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111315; --surface:#181b1e; --ink:#eceee9; --muted:#9aa1ab; --line:#2a2e33;
+  --accent:#2bb3a3; --accent-ink:#06201d; --accent-soft:#163430;
+  --soliq:#f0a24a; --bojxona:#7aa2ff; --buxgalteriya:#2bb3a3;
+  --note:#2a2414; --note-line:#8a6a25; --formula:#1d2326; --shadow:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:19px;text-decoration:none;letter-spacing:-.02em}
+.logo img{width:28px;height:28px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+.nav a:hover{color:var(--ink);background:var(--surface)}
+.nav a.active{color:var(--accent);background:var(--accent-soft)}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink);font:inherit;cursor:pointer}
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 16px 16px}
+  .nav.open{display:flex}
+}
+
+/* Hero */
+.hero{padding:56px 0 28px}
+.eyebrow{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:clamp(32px,5.5vw,54px);line-height:1.08;letter-spacing:-.03em;margin:10px 0 14px;max-width:780px}
+.hero p{color:var(--muted);font-size:18px;max-width:640px;margin:0}
+.search{margin-top:28px;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 6px 4px 16px;max-width:620px;box-shadow:var(--shadow)}
+.search:focus-within{border-color:var(--accent)}
+.search svg{flex:none;color:var(--muted)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:none;color:var(--ink);font:inherit;font-size:17px;padding:12px 0}
+.search kbd{font:12px Inter;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 6px;margin-right:8px}
+
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 8px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;font:inherit;font-size:14px;font-weight:500;cursor:pointer}
+.chip span{color:var(--muted);margin-left:4px}
+.chip.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip.active span{color:inherit;opacity:.7}
+
+/* Category sections (fanlab uslubi) */
+.cat-section{padding:28px 0;border-top:1px solid var(--line)}
+.cat-section:first-of-type{border-top:0}
+.cat-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.cat-head h2{margin:0;font-size:26px;letter-spacing:-.02em}
+.cat-head .count{color:var(--muted);font-size:15px}
+.cat-desc{color:var(--muted);margin:0 0 14px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c,var(--accent));margin-right:2px;transform:translateY(-2px)}
+
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+@media (max-width:420px){.list{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;gap:8px;height:100%;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;text-decoration:none;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--c,var(--accent));transform:translateY(-2px)}
+.card .badge{align-self:flex-start}
+.card h3{margin:0;font-size:18px;line-height:1.35;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+.card .meta{margin-top:auto;padding-top:6px;font-size:13px;color:var(--muted);display:flex;gap:12px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);padding:3px 9px;border-radius:999px;text-decoration:none}
+.empty{padding:48px 0;text-align:center;color:var(--muted)}
+
+/* Article */
+.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:56px;padding:32px 0 64px}
+@media (max-width:960px){.article-layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}}
+.crumbs{font-size:14px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--accent)}
+.article h1{font-size:clamp(30px,4.6vw,44px);line-height:1.12;letter-spacing:-.03em;margin:14px 0 12px}
+.article .lead{font-size:19px;color:var(--muted);margin:0 0 18px}
+.byline{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted);padding-bottom:22px;border-bottom:1px solid var(--line)}
+.prose{font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.72;max-width:720px}
+.prose h2{font-family:Inter,sans-serif;font-size:25px;letter-spacing:-.02em;line-height:1.25;margin:40px 0 10px;scroll-margin-top:84px}
+.prose h3{font-family:Inter,sans-serif;font-size:19px;margin:28px 0 6px}
+.prose p{margin:14px 0}
+.prose ul,.prose ol{padding-left:24px}
+.prose li{margin:6px 0}
+.prose strong{font-weight:600}
+.prose img{max-width:100%;height:auto;border-radius:12px;margin:12px 0;display:block}
+.prose a{color:var(--accent)}
+.prose blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid var(--line);color:var(--muted)}
+.prose table{width:100%;border-collapse:collapse;font-family:Inter,sans-serif;font-size:15px;margin:20px 0;display:block;overflow-x:auto}
+.prose th,.prose td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.prose td:first-child,.prose th:first-child{white-space:normal;min-width:160px}
+.prose th{font-weight:600;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.prose .note{font-family:Inter,sans-serif;font-size:16px;line-height:1.6;background:var(--note);border-left:4px solid var(--note-line);border-radius:0 10px 10px 0;padding:14px 18px;margin:22px 0}
+.prose .formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:16px;background:var(--formula);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:18px 0;overflow-x:auto}
+.toc{position:sticky;top:88px;align-self:start;font-size:14px}
+.toc b{display:block;margin-bottom:10px;color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.toc a{display:block;text-decoration:none;color:var(--muted);padding:5px 0 5px 12px;border-left:2px solid var(--line)}
+.toc a:hover,.toc a.on{color:var(--accent);border-left-color:var(--accent)}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 0;padding-top:22px;border-top:1px solid var(--line);max-width:720px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.cta{margin:36px 0 0;padding:24px;border-radius:16px;background:var(--accent-soft);max-width:720px}
+.cta h4{margin:0 0 6px;font-size:18px}
+.cta p{margin:0 0 14px;color:var(--muted)}
+.related{padding:8px 0 64px}
+.related h2{font-size:22px;margin:0 0 14px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer .links{display:flex;gap:18px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;opacity:0;transition:.2s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%)}
+mark{background:color-mix(in srgb,var(--accent) 25%,transparent);color:inherit;border-radius:3px;padding:0 2px}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="https://www.zerotax.uz/"><img src="https://www.zerotax.uz/logo.svg" alt="">ZeroTax</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menyu">Menyu</button>
+    <nav class="nav" id="nav">
+      <a href="https://www.zerotax.uz/">Bosh sahifa</a>
+      <a href="https://www.zerotax.uz/courses">Kurslar</a>
+      <a href="#/" class="active">Maqolalar</a>
+      <a href="https://test.zerotax.uz/">Test</a>
+      <a href="https://services.zerotax.uz/">Biz haqimizda</a>
+      <a href="https://www.zerotax.uz/contact">Bog'lanish</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"><div class="wrap empty">Yuklanmoqda…</div></main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 ZeroTax. Buxgalteriya, soliq va bojxona bo'yicha amaliy bilimlar.</div>
+    <div class="links">
+      <a href="https://t.me/buxgalteriyabojxona" target="_blank" rel="noopener">@buxgalteriyabojxona</a>
+      <a href="https://t.me/zerotax_jamiyati" target="_blank" rel="noopener">Zerotax jamiyati</a>
+      <a href="https://www.zerotax.uz/courses">Kurslar</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+function start(DATA){
+  var CATS = DATA.categories || [];
+  var ARTS = (DATA.articles || []).filter(function(a){ return a.status !== "draft"; })
+    .sort(function(a,b){ return b.date.localeCompare(a.date); });
+  var app = document.getElementById("app");
+  var state = { q: "", cat: "all" };
+  var MONTHS = ["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentyabr","oktyabr","noyabr","dekabr"];
+
+  function ccol(id){ var c = catById(id); return "var(--"+slugify(id)+","+(c.color||"var(--accent)")+")"; }
+  function catById(id){ for (var i=0;i<CATS.length;i++) if (CATS[i].id===id) return CATS[i]; return {id:id,name:id}; }
+  function esc(s){ return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+  function fmtDate(d){ var p=d.split("-"); return +p[2]+"-"+MONTHS[+p[1]-1]+", "+p[0]; }
+  function readMin(html){ var w=html.replace(/<[^>]+>/g," ").trim().split(/\s+/).length; return Math.max(1,Math.round(w/180)); }
+  function norm(s){ return String(s).toLowerCase().replace(/[ʻʼ‘’`]/g,"'"); }
+  function plain(html){ return html.replace(/<[^>]+>/g," "); }
+  function slugify(s){ return norm(s).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
+  function highlight(text,q){
+    var t = esc(text); if(!q) return t;
+    var i = norm(text).indexOf(q); if(i<0) return t;
+    return esc(text.slice(0,i))+"<mark>"+esc(text.slice(i,i+q.length))+"</mark>"+esc(text.slice(i+q.length));
+  }
+
+  function card(a,q){
+    var c = catById(a.category);
+    return '<li><a class="card" style="--c:'+ccol(a.category)+'" href="#/'+esc(a.slug)+'">'+
+      '<span class="badge">'+esc(c.name)+'</span>'+
+      '<h3>'+highlight(a.title,q)+'</h3>'+
+      '<p>'+highlight(a.lead,q)+'</p>'+
+      '<span class="meta"><span>'+fmtDate(a.date)+'</span><span>'+readMin(a.body)+' daqiqa o\'qish</span></span>'+
+    '</a></li>';
+  }
+
+  function filtered(){
+    var q = norm(state.q.trim());
+    return ARTS.filter(function(a){
+      if (state.cat!=="all" && a.category!==state.cat) return false;
+      if (!q) return true;
+      return norm(a.title+" "+a.lead+" "+(a.tags||[]).join(" ")+" "+plain(a.body)).indexOf(q)>=0;
+    });
+  }
+
+  function renderList(){
+    document.title = "Maqolalar — ZeroTax";
+    var chips = '<button class="chip'+(state.cat==="all"?" active":"")+'" data-cat="all">Barchasi<span>'+ARTS.length+'</span></button>'+
+      CATS.map(function(c){
+        var n = ARTS.filter(function(a){return a.category===c.id;}).length;
+        if (!n) return "";
+        return '<button class="chip'+(state.cat===c.id?" active":"")+'" data-cat="'+c.id+'">'+esc(c.name)+'<span>'+n+'</span></button>';
+      }).join("");
+
+    app.innerHTML =
+      '<section class="hero"><div class="wrap">'+
+        '<div class="eyebrow">Maqolalar</div>'+
+        '<h1>Buxgalteriya, soliq va bojxona — sodda tilda</h1>'+
+        '<p>Har bir maqola bitta savolga javob beradi: tushuncha, formula va amaliy misol bilan.</p>'+
+        '<label class="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'+
+          '<input id="q" type="search" placeholder="Masalan: QQS, bojxona boji, provodka…" autocomplete="off" value="'+esc(state.q)+'"><kbd>/</kbd></label>'+
+        '<div class="chips" id="chips">'+chips+'</div>'+
+      '</div></section>'+
+      '<div class="wrap" id="results"></div>';
+
+    renderResults();
+    var input = document.getElementById("q");
+    input.addEventListener("input", function(){ state.q = input.value; renderResults(); });
+    document.getElementById("chips").addEventListener("click", function(e){
+      var b = e.target.closest(".chip"); if(!b) return;
+      state.cat = b.getAttribute("data-cat");
+      [].forEach.call(this.children,function(x){ x.classList.toggle("active", x===b); });
+      renderResults();
+    });
+  }
+
+  function renderResults(){
+    var box = document.getElementById("results"); if(!box) return;
+    var q = norm(state.q.trim());
+    var list = filtered();
+    if (!list.length){
+      box.innerHTML = '<div class="empty">Hech narsa topilmadi. Boshqa so\'z bilan qidirib ko\'ring yoki savolingizni <a href="https://t.me/zerotax_jamiyati" target="_blank" rel="noopener">Zerotax jamiyati</a>da bering.</div>';
+      return;
+    }
+    if (q || state.cat!=="all"){
+      box.innerHTML = '<section class="cat-section"><div class="cat-head"><h2>'+(q?"Qidiruv natijalari":esc(catById(state.cat).name))+'</h2><span class="count">'+list.length+' ta maqola</span></div>'+
+        (!q && catById(state.cat).desc ? '<p class="cat-desc">'+esc(catById(state.cat).desc)+'</p>' : '')+
+        '<ul class="list">'+list.map(function(a){return card(a,q);}).join("")+'</ul></section>';
+      return;
+    }
+    box.innerHTML = CATS.map(function(c){
+      var items = list.filter(function(a){return a.category===c.id;});
+      if(!items.length) return "";
+      return '<section class="cat-section" style="--c:'+ccol(c.id)+'">'+
+        '<div class="cat-head"><h2><span class="dot"></span> '+esc(c.name)+'</h2><span class="count">'+items.length+' ta maqola</span></div>'+
+        '<p class="cat-desc">'+esc(c.desc||"")+'</p>'+
+        '<ul class="list">'+items.map(function(a){return card(a,"");}).join("")+'</ul></section>';
+    }).join("");
+  }
+
+  function renderArticle(a){
+    var c = catById(a.category);
+    document.title = a.title+" — ZeroTax";
+    app.innerHTML =
+      '<div class="wrap"><div class="article-layout">'+
+        '<article class="article">'+
+          '<nav class="crumbs"><a href="#/">Maqolalar</a><span>/</span><a href="#/" data-cat="'+esc(a.category)+'" id="crumbCat">'+esc(c.name)+'</a></nav>'+
+          '<h1>'+esc(a.title)+'</h1>'+
+          '<p class="lead">'+esc(a.lead)+'</p>'+
+          '<div class="byline"><span class="badge" style="--c:'+ccol(a.category)+'">'+esc(c.name)+'</span>'+
+            '<span>'+esc(a.author||"ZeroTax")+'</span><span>'+fmtDate(a.date)+'</span><span>'+readMin(a.body)+' daqiqa o\'qish</span></div>'+
+          '<div class="prose" id="prose">'+a.body+'</div>'+
+          '<div class="share">'+
+            '<a class="btn primary" target="_blank" rel="noopener" href="https://t.me/share/url?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(a.title)+'">Telegramda ulashish</a>'+
+            '<button class="btn" id="copyBtn">Havolani nusxalash</button>'+
+          '</div>'+
+          '<div class="cta"><h4>Mavzuni amaliyotda o\'rganmoqchimisiz?</h4><p>Video darslar va real korxona misollari asosidagi kurslar ZeroTax platformasida.</p>'+
+            '<a class="btn primary" href="https://www.zerotax.uz/courses">Kurslarni ko\'rish</a></div>'+
+        '</article>'+
+        '<aside class="toc" id="toc"></aside>'+
+      '</div></div>'+
+      '<section class="related"><div class="wrap" id="related"></div></section>';
+
+    // Mundarija (h2 dan)
+    var hs = document.querySelectorAll("#prose h2");
+    if (hs.length > 1){
+      var toc = '<b>Mundarija</b>';
+      [].forEach.call(hs,function(h,i){ h.id = "s-"+(slugify(h.textContent)||i); toc += '<a href="#/'+esc(a.slug)+'/'+h.id+'">'+esc(h.textContent)+'</a>'; });
+      document.getElementById("toc").innerHTML = toc;
+    }
+
+    // O'xshash maqolalar
+    var rel = ARTS.filter(function(x){return x.slug!==a.slug && x.category===a.category;})
+      .concat(ARTS.filter(function(x){return x.slug!==a.slug && x.category!==a.category;})).slice(0,3);
+    if (rel.length) document.getElementById("related").innerHTML = '<h2>Yana o\'qing</h2><ul class="list">'+rel.map(function(x){return card(x,"");}).join("")+'</ul>';
+
+    document.getElementById("copyBtn").addEventListener("click", function(){
+      var url = location.href.split("#")[0]+"#/"+a.slug;
+      (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function(){ toast("Havola nusxalandi"); }, function(){ toast(url); });
+    });
+    document.getElementById("crumbCat").addEventListener("click", function(){ state.cat = a.category; state.q = ""; });
+  }
+
+  function toast(msg){ var t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(function(){t.classList.remove("show");},1800); }
+
+  function route(){
+    var h = decodeURIComponent(location.hash.replace(/^#\/?/,""));
+    var parts = h.split("/");
+    var slug = parts[0];
+    document.getElementById("nav").classList.remove("open");
+    if (!slug){ app.removeAttribute("data-slug"); renderList(); window.scrollTo(0,0); return; }
+    var a = ARTS.filter(function(x){return x.slug===slug;})[0];
+    if (!a){ app.innerHTML = '<div class="wrap empty"><h2>Maqola topilmadi</h2><p><a href="#/">Barcha maqolalarga qaytish</a></p></div>'; return; }
+    if (!document.getElementById("prose") || app.getAttribute("data-slug")!==slug){ renderArticle(a); app.setAttribute("data-slug",slug); window.scrollTo(0,0); }
+    if (parts[1]){ var el=document.getElementById(parts[1]); if(el) el.scrollIntoView({behavior:"smooth"}); }
+  }
+
+  window.addEventListener("hashchange", route);
+  document.getElementById("menuBtn").addEventListener("click", function(){ document.getElementById("nav").classList.toggle("open"); });
+  document.addEventListener("keydown", function(e){
+    var q = document.getElementById("q");
+    if (e.key==="/" && q && document.activeElement!==q){ e.preventDefault(); q.focus(); }
+  });
+  route();
+}
+fetch("data/articles.json", {cache: "no-cache"})
+  .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(start)
+  .catch(function(){ document.getElementById("app").innerHTML = '<div class="wrap empty">Maqolalarni yuklab bo\'lmadi. Sahifani yangilang.</div>'; });
+</script>
+</body>
+</html>
